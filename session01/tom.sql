@@ -1,10 +1,10 @@
 CREATE TABLE Docent (
-docent_id INT, 
+docent_id INT UNIQUE, 
 naam VARCHAR
 );
 
 CREATE TABLE Thema (
-thema_id INT,
+thema_id INT UNIQUE,
 docent_id int,
 naam VARCHAR
 );
