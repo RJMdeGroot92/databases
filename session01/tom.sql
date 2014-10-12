@@ -1,5 +1,5 @@
 CREATE TABLE Docent (
-docent_id INT UNIQUE, 
+docent_id INT UNIQUE,
 naam VARCHAR
 );
 
