@@ -1,4 +1,5 @@
 Select P.name
-From Person P, Writer W, Movies M, Directs D
-Where P.pid is W.pid and
-er bestaat geen film die w.mid =d.mid heeft.
+From Person P, Writer W, Movies M
+Where P.pid = W.pid and
+voor alle films die hij geschreven heeft
+bestaat er geen enkele film, die een regiseur heeft. 
