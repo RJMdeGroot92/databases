@@ -1,5 +1,11 @@
-Select P.name
-From Person P, Writer W, Movies M
-Where P.pid = W.pid and
-voor alle films die hij geschreven heeft
-bestaat er geen enkele film, die een regiseur heeft. 
+select P.name
+from Person P, Writes W
+where P.pid=W.pid and 
+not exists(
+select *
+from Writes W
+where w.pid=p.pid and
+Exists(
+Select *
+from Directs D
+where D.mid=W.mid));
