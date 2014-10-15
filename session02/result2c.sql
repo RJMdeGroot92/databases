@@ -1,3 +1,4 @@
 select P.name
-from Person P
-where p is writer van een regisseurloze film.
+from Person P, writes W
+where p.pid=w.pid
+and w.mid=m.mid waar m.mid van een film is zonder regiseur.
